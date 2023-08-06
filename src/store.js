@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import loginReducers from './pages/login/loginSlice';
 import alertReducers from './components/alertSlice';
+import accountReducers from './pages/login/accountSilce';
  
 export default configureStore({
   reducer: {
-    login: loginReducers,
-    alert: alertReducers
+    alert: alertReducers,
+    account: accountReducers
   }
 })

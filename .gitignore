@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/src/web3Config/contractInfo.js
 
 # testing
 /coverage

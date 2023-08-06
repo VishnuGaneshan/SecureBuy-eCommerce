@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import ConnectWallet from "./ConnectWallet";
 
 const Home = () => {
     return (
@@ -39,10 +39,7 @@ const Home = () => {
             </div>
 
             {/* connect wallet button option */}
-            <div className="text-center container bg-primary p-5 my-5">
-            <h3 className="my-5 text-white"> Join the SecureBuy community and enjoy a seamless shopping experience </h3>
-            <Link className="btn btn-outline-light" to='/login'>Connect Your Crypto wallet</Link>
-            </div>
+            <ConnectWallet/>
             {/* sliding review cards of customer, company, seller */}
 
         </div>

@@ -17,7 +17,7 @@ export const alertSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { setAlert, resetAlert } = alertSlice.actions
+const { setAlert, resetAlert } = alertSlice.actions
 
 let currentMessage = ''; // to Handle multiple alerts problem 
 export const alertSetter = ({type, message}) => dispatch => {

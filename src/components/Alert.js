@@ -1,4 +1,5 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { alertSetter } from './alertSlice';
 
 const Alert = () => {
     const alert = useSelector(state => state.alert);
@@ -13,6 +14,12 @@ const Alert = () => {
         </div>}
         </div>
     )
+}
+
+export const useSetAlert = ({type, message}) => {
+    const dispatch = useDispatch();
+    console.log(type, message);
+    dispatch(alertSetter({type: type, message: message}));
 }
 
 export default Alert;
